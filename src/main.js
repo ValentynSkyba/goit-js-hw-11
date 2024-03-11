@@ -5,8 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const formEl = document.querySelector('.js-search-form');
 const loader = document.querySelector('.loader');
-
-const msgError =
+const msgErr =
   'Sorry, there are no images matching your search query. Please try again!';
 const msgEmpty = 'Error, empty field';
 
@@ -30,7 +29,7 @@ function onSubmitBtn(e) {
     .then(res => {
       if (res.hits.length === 0) {
         hideLoader();
-        showMessage(msgError);
+        showMessage(msgErr);
       } else {
         renderImages(res.hits);
       }

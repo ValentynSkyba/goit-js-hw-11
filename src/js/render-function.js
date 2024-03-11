@@ -29,18 +29,18 @@ function createImageCard({
 }) {
   return ` <li class="gallery-item">
       <a href="${largeImageURL}" class="gallery-link">
-        <img src="${webformatURL}" alt="${tags}" class="gallery__image" />
-        <ul class="info">
-          <li class="info-item">
+        <img src="${webformatURL}" alt="${tags}" class="gallery-image" />
+        <ul class="description">
+          <li class="desc-item">
             <p>Likes</p> ${likes}
           </li>
-          <li class="info-item">
+          <li class="desc-item">
             <p>Views</p> ${views}
           </li>
-          <li class="info-item">
+          <li class="desc-item">
             <p>Comments</p> ${comments}
           </li>
-          <li class="info-item">
+          <li class="desc-item">
             <p>Downloads</p> ${downloads}
           </li>
         </ul>
