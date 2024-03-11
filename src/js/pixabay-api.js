@@ -4,13 +4,13 @@ export function getPhotos(query) {
   const END_POINT = 'api/';
   const params = new URLSearchParams({
     key: API_KEY,
-    q: 'userQuery',
+    q: query,
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
   });
 
-  const url = `${BASE_URL}${END_POINT}?${params}`;
+  const url = `${BASE_URL}${END_POINT}/?${params}`;
 
   return fetch(url).then(res => {
     if (!res.ok) {

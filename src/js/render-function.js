@@ -32,16 +32,16 @@ function createImageCard({
         <img src="${webformatURL}" alt="${tags}" class="gallery-image" />
         <ul class="description">
           <li class="desc-item">
-            <p>Likes</p> ${likes}
+            <p class="des-p">Likes</p> ${likes}
           </li>
           <li class="desc-item">
-            <p>Views</p> ${views}
+            <p class="des-p">Views</p> ${views}
           </li>
           <li class="desc-item">
-            <p>Comments</p> ${comments}
+            <p class="des-p">Comments</p> ${comments}
           </li>
           <li class="desc-item">
-            <p>Downloads</p> ${downloads}
+            <p class="des-p">Downloads</p> ${downloads}
           </li>
         </ul>
       </a>
